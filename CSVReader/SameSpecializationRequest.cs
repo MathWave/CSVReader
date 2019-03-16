@@ -44,10 +44,9 @@ namespace CSVReader
                 return;
             }
             Close();
-            string spec = form.dispansers[num].Specialization;
             List<Dispanser> list = new List<Dispanser>();
             foreach (Dispanser d in form.dispansers)
-                if (d.Specialization == spec)
+                if (form.dispansers[num].Same(d))
                     list.Add(d);
             form.dispansers = list;
             form.ShowOnGrid();

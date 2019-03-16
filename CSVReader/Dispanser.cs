@@ -70,5 +70,7 @@ namespace CSVReader
             };
         }
 
+        public bool Same(Dispanser d) => d.Specialization == Specialization;
+
     }
 }
