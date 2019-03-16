@@ -616,7 +616,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Change";
             this.Text = "Изменение диспансера";
-            this.Deactivate += new System.EventHandler(this.Form3_Deactivate);
             this.ResumeLayout(false);
             this.PerformLayout();
 

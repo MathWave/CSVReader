@@ -55,10 +55,6 @@ namespace CSVReader
             Close();
         }
 
-        private void Form3_Deactivate(object sender, EventArgs e)
-        {
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             if (fullname.Text == null || fullname.Text.Length == 0)

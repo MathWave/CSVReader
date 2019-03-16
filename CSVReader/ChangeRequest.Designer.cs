@@ -81,7 +81,6 @@
             this.Controls.Add(this.label1);
             this.Name = "ChangeRequest";
             this.Text = "Изменение";
-            this.Deactivate += new System.EventHandler(this.Form4_Deactivate);
             this.ResumeLayout(false);
             this.PerformLayout();
 

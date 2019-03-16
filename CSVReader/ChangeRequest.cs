@@ -27,11 +27,6 @@ namespace CSVReader
             Close();
         }
 
-        private void Form4_Deactivate(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             int num;

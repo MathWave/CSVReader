@@ -26,11 +26,6 @@ namespace CSVReader
             Close();
         }
 
-        private void Form2_Deactivate(object sender, EventArgs e)
-        {
-            f.Activate();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             if (fullname.Text == null || fullname.Text.Length == 0)
