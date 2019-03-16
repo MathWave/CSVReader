@@ -34,9 +34,10 @@
             this.create = new System.Windows.Forms.ToolStripMenuItem();
             this.open = new System.Windows.Forms.ToolStripMenuItem();
             this.save = new System.Windows.Forms.ToolStripMenuItem();
+            this.savein = new System.Windows.Forms.ToolStripMenuItem();
             this.saveas = new System.Windows.Forms.ToolStripMenuItem();
             this.close = new System.Windows.Forms.ToolStripMenuItem();
-            this.диспансерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DispanserToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.add = new System.Windows.Forms.ToolStripMenuItem();
             this.change = new System.Windows.Forms.ToolStripMenuItem();
             this.remove = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +59,6 @@
             this.OpenToolStrip = new System.Windows.Forms.ToolStripButton();
             this.SaveToolStrip = new System.Windows.Forms.ToolStripButton();
             this.SaveAsToolStrip = new System.Windows.Forms.ToolStripButton();
-            this.savein = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveInToolStrip = new System.Windows.Forms.ToolStripButton();
             this.CloseToolStrip = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
@@ -71,7 +71,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
-            this.диспансерToolStripMenuItem,
+            this.DispanserToolStrip,
             this.отсортироватьToolStripMenuItem,
             this.фильтрToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -96,66 +96,73 @@
             // create
             // 
             this.create.Name = "create";
-            this.create.Size = new System.Drawing.Size(252, 30);
+            this.create.Size = new System.Drawing.Size(226, 30);
             this.create.Text = "Создать";
             this.create.Click += new System.EventHandler(this.create_Click);
             // 
             // open
             // 
             this.open.Name = "open";
-            this.open.Size = new System.Drawing.Size(252, 30);
+            this.open.Size = new System.Drawing.Size(226, 30);
             this.open.Text = "Открыть";
             this.open.Click += new System.EventHandler(this.open_Click);
             // 
             // save
             // 
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(252, 30);
+            this.save.Size = new System.Drawing.Size(226, 30);
             this.save.Text = "Сохранить";
             this.save.Click += new System.EventHandler(this.save_Click);
+            // 
+            // savein
+            // 
+            this.savein.Name = "savein";
+            this.savein.Size = new System.Drawing.Size(226, 30);
+            this.savein.Text = "Сохранить в...";
+            this.savein.Click += new System.EventHandler(this.savein_Click);
             // 
             // saveas
             // 
             this.saveas.Name = "saveas";
-            this.saveas.Size = new System.Drawing.Size(252, 30);
+            this.saveas.Size = new System.Drawing.Size(226, 30);
             this.saveas.Text = "Сохранить как...";
             this.saveas.Click += new System.EventHandler(this.saveas_Click);
             // 
             // close
             // 
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(252, 30);
+            this.close.Size = new System.Drawing.Size(226, 30);
             this.close.Text = "Закрыть";
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
-            // диспансерToolStripMenuItem
+            // DispanserToolStrip
             // 
-            this.диспансерToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.DispanserToolStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.add,
             this.change,
             this.remove});
-            this.диспансерToolStripMenuItem.Name = "диспансерToolStripMenuItem";
-            this.диспансерToolStripMenuItem.Size = new System.Drawing.Size(111, 29);
-            this.диспансерToolStripMenuItem.Text = "Диспансер";
+            this.DispanserToolStrip.Name = "DispanserToolStrip";
+            this.DispanserToolStrip.Size = new System.Drawing.Size(111, 29);
+            this.DispanserToolStrip.Text = "Диспансер";
             // 
             // add
             // 
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(175, 30);
+            this.add.Size = new System.Drawing.Size(252, 30);
             this.add.Text = "Добавить";
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // change
             // 
             this.change.Name = "change";
-            this.change.Size = new System.Drawing.Size(175, 30);
+            this.change.Size = new System.Drawing.Size(252, 30);
             this.change.Text = "Изменить";
             this.change.Click += new System.EventHandler(this.change_Click);
             // 
             // remove
             // 
             this.remove.Name = "remove";
-            this.remove.Size = new System.Drawing.Size(175, 30);
+            this.remove.Size = new System.Drawing.Size(252, 30);
             this.remove.Text = "Удалить";
             this.remove.Click += new System.EventHandler(this.remove_Click);
             // 
@@ -324,13 +331,6 @@
             this.SaveAsToolStrip.Text = "Сохранить как...";
             this.SaveAsToolStrip.Click += new System.EventHandler(this.SaveAsToolStrip_Click);
             // 
-            // savein
-            // 
-            this.savein.Name = "savein";
-            this.savein.Size = new System.Drawing.Size(252, 30);
-            this.savein.Text = "Сохранить в...";
-            this.savein.Click += new System.EventHandler(this.savein_Click);
-            // 
             // SaveInToolStrip
             // 
             this.SaveInToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -385,7 +385,7 @@
         private System.Windows.Forms.ToolStripMenuItem saveas;
         private System.Windows.Forms.ToolStripMenuItem close;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ToolStripMenuItem диспансерToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DispanserToolStrip;
         private System.Windows.Forms.ToolStripMenuItem add;
         private System.Windows.Forms.ToolStripMenuItem remove;
         private System.Windows.Forms.ToolStripMenuItem change;

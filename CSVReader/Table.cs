@@ -316,6 +316,7 @@ namespace CSVReader
             reserved = false;
             button1.Visible = false;
             ShowOnGrid();
+            DispanserToolStrip.Enabled = true;
         }
 
         private void FilterSame_Click(object sender, EventArgs e)
@@ -329,6 +330,7 @@ namespace CSVReader
                 ReserveCopy = dispansers;
             SameSpecializationRequest f = new SameSpecializationRequest(this);
             f.Show();
+            DispanserToolStrip.Enabled = false;
         }
 
         private void FilterSpecialization_Click(object sender, EventArgs e)
@@ -342,6 +344,7 @@ namespace CSVReader
                 ReserveCopy = dispansers;
             FilterSpecialization f = new FilterSpecialization(this);
             f.Show();
+            DispanserToolStrip.Enabled = false;
         }
 
         private void FilterChiefPosition_Click(object sender, EventArgs e)
@@ -355,6 +358,7 @@ namespace CSVReader
                 ReserveCopy = dispansers;
             FilterChiefPosition f = new FilterChiefPosition(this);
             f.Show();
+            DispanserToolStrip.Enabled = false;
         }
 
         private void CreateToolStrip_Click(object sender, EventArgs e)
@@ -411,5 +415,6 @@ namespace CSVReader
         {
             close_Click(sender, e);
         }
+
     }
 }

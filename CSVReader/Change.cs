@@ -98,6 +98,8 @@ namespace CSVReader
             }
             Dispanser d;
             try { d = new Dispanser(info); } catch { MessageBox.Show("Некорректно введены данные!", "Ошибка!"); return; }
+            //int index = form.ReserveCopy.FindIndex(form.dispansers[num]);
+            Dispanser res = form.dispansers[num];
             form.dispansers[num] = d;
             form.ShowOnGrid();
             Close();
