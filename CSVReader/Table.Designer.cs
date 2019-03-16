@@ -96,42 +96,42 @@
             // create
             // 
             this.create.Name = "create";
-            this.create.Size = new System.Drawing.Size(226, 30);
+            this.create.Size = new System.Drawing.Size(252, 30);
             this.create.Text = "Создать";
             this.create.Click += new System.EventHandler(this.create_Click);
             // 
             // open
             // 
             this.open.Name = "open";
-            this.open.Size = new System.Drawing.Size(226, 30);
+            this.open.Size = new System.Drawing.Size(252, 30);
             this.open.Text = "Открыть";
             this.open.Click += new System.EventHandler(this.open_Click);
             // 
             // save
             // 
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(226, 30);
+            this.save.Size = new System.Drawing.Size(252, 30);
             this.save.Text = "Сохранить";
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // savein
             // 
             this.savein.Name = "savein";
-            this.savein.Size = new System.Drawing.Size(226, 30);
+            this.savein.Size = new System.Drawing.Size(252, 30);
             this.savein.Text = "Сохранить в...";
             this.savein.Click += new System.EventHandler(this.savein_Click);
             // 
             // saveas
             // 
             this.saveas.Name = "saveas";
-            this.saveas.Size = new System.Drawing.Size(226, 30);
+            this.saveas.Size = new System.Drawing.Size(252, 30);
             this.saveas.Text = "Сохранить как...";
             this.saveas.Click += new System.EventHandler(this.saveas_Click);
             // 
             // close
             // 
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(226, 30);
+            this.close.Size = new System.Drawing.Size(252, 30);
             this.close.Text = "Закрыть";
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
@@ -148,21 +148,21 @@
             // add
             // 
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(252, 30);
+            this.add.Size = new System.Drawing.Size(175, 30);
             this.add.Text = "Добавить";
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // change
             // 
             this.change.Name = "change";
-            this.change.Size = new System.Drawing.Size(252, 30);
+            this.change.Size = new System.Drawing.Size(175, 30);
             this.change.Text = "Изменить";
             this.change.Click += new System.EventHandler(this.change_Click);
             // 
             // remove
             // 
             this.remove.Name = "remove";
-            this.remove.Size = new System.Drawing.Size(252, 30);
+            this.remove.Size = new System.Drawing.Size(175, 30);
             this.remove.Text = "Удалить";
             this.remove.Click += new System.EventHandler(this.remove_Click);
             // 
@@ -299,7 +299,7 @@
             this.CreateToolStrip.Name = "CreateToolStrip";
             this.CreateToolStrip.Size = new System.Drawing.Size(28, 28);
             this.CreateToolStrip.Text = "&Создать";
-            this.CreateToolStrip.Click += new System.EventHandler(this.CreateToolStrip_Click);
+            this.CreateToolStrip.Click += new System.EventHandler(this.create_Click);
             // 
             // OpenToolStrip
             // 
@@ -309,7 +309,7 @@
             this.OpenToolStrip.Name = "OpenToolStrip";
             this.OpenToolStrip.Size = new System.Drawing.Size(28, 28);
             this.OpenToolStrip.Text = "&Открыть";
-            this.OpenToolStrip.Click += new System.EventHandler(this.OpenToolStrip_Click);
+            this.OpenToolStrip.Click += new System.EventHandler(this.open_Click);
             // 
             // SaveToolStrip
             // 
@@ -319,7 +319,7 @@
             this.SaveToolStrip.Name = "SaveToolStrip";
             this.SaveToolStrip.Size = new System.Drawing.Size(28, 28);
             this.SaveToolStrip.Text = "&Сохранить";
-            this.SaveToolStrip.Click += new System.EventHandler(this.SaveToolStrip_Click);
+            this.SaveToolStrip.Click += new System.EventHandler(this.save_Click);
             // 
             // SaveAsToolStrip
             // 
@@ -329,7 +329,7 @@
             this.SaveAsToolStrip.Name = "SaveAsToolStrip";
             this.SaveAsToolStrip.Size = new System.Drawing.Size(28, 28);
             this.SaveAsToolStrip.Text = "Сохранить как...";
-            this.SaveAsToolStrip.Click += new System.EventHandler(this.SaveAsToolStrip_Click);
+            this.SaveAsToolStrip.Click += new System.EventHandler(this.saveas_Click);
             // 
             // SaveInToolStrip
             // 
@@ -339,7 +339,7 @@
             this.SaveInToolStrip.Name = "SaveInToolStrip";
             this.SaveInToolStrip.Size = new System.Drawing.Size(28, 28);
             this.SaveInToolStrip.Text = "Сохранить в...";
-            this.SaveInToolStrip.Click += new System.EventHandler(this.SaveInToolStrip_Click);
+            this.SaveInToolStrip.Click += new System.EventHandler(this.savein_Click);
             // 
             // CloseToolStrip
             // 
@@ -349,7 +349,7 @@
             this.CloseToolStrip.Name = "CloseToolStrip";
             this.CloseToolStrip.Size = new System.Drawing.Size(28, 28);
             this.CloseToolStrip.Text = "Закрыть";
-            this.CloseToolStrip.Click += new System.EventHandler(this.CloseToolStrip_Click);
+            this.CloseToolStrip.Click += new System.EventHandler(this.close_Click);
             // 
             // Table
             // 

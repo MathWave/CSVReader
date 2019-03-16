@@ -361,26 +361,6 @@ namespace CSVReader
             DispanserToolStrip.Enabled = false;
         }
 
-        private void CreateToolStrip_Click(object sender, EventArgs e)
-        {
-            create_Click(sender, e);
-        }
-
-        private void OpenToolStrip_Click(object sender, EventArgs e)
-        {
-            open_Click(sender, e);
-        }
-
-        private void SaveToolStrip_Click(object sender, EventArgs e)
-        {
-            save_Click(sender, e);
-        }
-
-        private void SaveAsToolStrip_Click(object sender, EventArgs e)
-        {
-            saveas_Click(sender, e);
-        }
-
         private void savein_Click(object sender, EventArgs e)
         {
             if (data.Columns.Count == 0)
@@ -404,16 +384,6 @@ namespace CSVReader
                 fstream.WriteLine();
             }
             fstream.Close();
-        }
-
-        private void SaveInToolStrip_Click(object sender, EventArgs e)
-        {
-            savein_Click(sender, e);
-        }
-
-        private void CloseToolStrip_Click(object sender, EventArgs e)
-        {
-            close_Click(sender, e);
         }
 
     }
