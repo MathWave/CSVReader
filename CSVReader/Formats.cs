@@ -28,6 +28,11 @@ namespace CSVReader
                     list.Add(tmp);
                     tmp = "";
                 }
+                else if (line[i] == '"' && line[i + 1] == '"')
+                {
+                    tmp += '"';
+                    i += 2;
+                }
                 else
                     tmp += line[i++];
             }

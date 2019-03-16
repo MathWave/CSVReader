@@ -147,7 +147,7 @@ namespace CSVReader
                 DataRow row = data.Rows[i];
                 fstream.Write(row[0] + ";");
                 for (int j = 1; j < data.Columns.Count; j++)
-                    fstream.Write("\"" + row[j] + "\";");
+                    fstream.Write("\"" + row[j].ToString().Replace("\"", "\"\"") + "\";");
                 fstream.WriteLine();
             }
             fstream.Close();
@@ -170,7 +170,10 @@ namespace CSVReader
                 DataRow row = data.Rows[i];
                 fstream.Write(row[0] + ";");
                 for (int j = 1; j < data.Columns.Count; j++)
-                    fstream.Write("\"" + row[j] + "\";");
+                {
+                    string newrow = row[j].ToString().Replace("\"", "\"\"");
+                    fstream.Write("\"" + newrow + "\";");
+                }
                 fstream.WriteLine();
             }
             fstream.Close();
@@ -370,6 +373,41 @@ namespace CSVReader
         private void SaveAsToolStrip_Click(object sender, EventArgs e)
         {
             saveas_Click(sender, e);
+        }
+
+        private void savein_Click(object sender, EventArgs e)
+        {
+            if (data.Columns.Count == 0)
+            {
+                MessageBox.Show("Таблицы нет!", "Ошибка!");
+                return;
+            }
+            string newpath = "";
+            var dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+                newpath = dialog.FileName;
+            else
+                return;
+            StreamWriter fstream = new StreamWriter(newpath, true, System.Text.Encoding.UTF8);
+            for (int i = 0; i < data.Rows.Count; i++)
+            {
+                DataRow row = data.Rows[i];
+                fstream.Write(row[0] + ";");
+                for (int j = 1; j < data.Columns.Count; j++)
+                    fstream.Write("\"" + row[j].ToString().Replace("\"", "\"\"") + "\";");
+                fstream.WriteLine();
+            }
+            fstream.Close();
+        }
+
+        private void SaveInToolStrip_Click(object sender, EventArgs e)
+        {
+            savein_Click(sender, e);
+        }
+
+        private void CloseToolStrip_Click(object sender, EventArgs e)
+        {
+            close_Click(sender, e);
         }
     }
 }

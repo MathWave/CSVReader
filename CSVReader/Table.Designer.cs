@@ -54,10 +54,13 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.CreateToolStrip = new System.Windows.Forms.ToolStripButton();
             this.OpenToolStrip = new System.Windows.Forms.ToolStripButton();
             this.SaveToolStrip = new System.Windows.Forms.ToolStripButton();
-            this.CreateToolStrip = new System.Windows.Forms.ToolStripButton();
             this.SaveAsToolStrip = new System.Windows.Forms.ToolStripButton();
+            this.savein = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveInToolStrip = new System.Windows.Forms.ToolStripButton();
+            this.CloseToolStrip = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -83,6 +86,7 @@
             this.create,
             this.open,
             this.save,
+            this.savein,
             this.saveas,
             this.close});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
@@ -92,35 +96,35 @@
             // create
             // 
             this.create.Name = "create";
-            this.create.Size = new System.Drawing.Size(226, 30);
+            this.create.Size = new System.Drawing.Size(252, 30);
             this.create.Text = "Создать";
             this.create.Click += new System.EventHandler(this.create_Click);
             // 
             // open
             // 
             this.open.Name = "open";
-            this.open.Size = new System.Drawing.Size(226, 30);
+            this.open.Size = new System.Drawing.Size(252, 30);
             this.open.Text = "Открыть";
             this.open.Click += new System.EventHandler(this.open_Click);
             // 
             // save
             // 
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(226, 30);
+            this.save.Size = new System.Drawing.Size(252, 30);
             this.save.Text = "Сохранить";
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // saveas
             // 
             this.saveas.Name = "saveas";
-            this.saveas.Size = new System.Drawing.Size(226, 30);
+            this.saveas.Size = new System.Drawing.Size(252, 30);
             this.saveas.Text = "Сохранить как...";
             this.saveas.Click += new System.EventHandler(this.saveas_Click);
             // 
             // close
             // 
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(226, 30);
+            this.close.Size = new System.Drawing.Size(252, 30);
             this.close.Text = "Закрыть";
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
@@ -271,12 +275,24 @@
             this.CreateToolStrip,
             this.OpenToolStrip,
             this.SaveToolStrip,
-            this.SaveAsToolStrip});
+            this.SaveAsToolStrip,
+            this.SaveInToolStrip,
+            this.CloseToolStrip});
             this.toolStrip1.Location = new System.Drawing.Point(0, 33);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1324, 31);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // CreateToolStrip
+            // 
+            this.CreateToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.CreateToolStrip.Image = ((System.Drawing.Image)(resources.GetObject("CreateToolStrip.Image")));
+            this.CreateToolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.CreateToolStrip.Name = "CreateToolStrip";
+            this.CreateToolStrip.Size = new System.Drawing.Size(28, 28);
+            this.CreateToolStrip.Text = "&Создать";
+            this.CreateToolStrip.Click += new System.EventHandler(this.CreateToolStrip_Click);
             // 
             // OpenToolStrip
             // 
@@ -298,16 +314,6 @@
             this.SaveToolStrip.Text = "&Сохранить";
             this.SaveToolStrip.Click += new System.EventHandler(this.SaveToolStrip_Click);
             // 
-            // CreateToolStrip
-            // 
-            this.CreateToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.CreateToolStrip.Image = ((System.Drawing.Image)(resources.GetObject("CreateToolStrip.Image")));
-            this.CreateToolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.CreateToolStrip.Name = "CreateToolStrip";
-            this.CreateToolStrip.Size = new System.Drawing.Size(28, 28);
-            this.CreateToolStrip.Text = "&Создать";
-            this.CreateToolStrip.Click += new System.EventHandler(this.CreateToolStrip_Click);
-            // 
             // SaveAsToolStrip
             // 
             this.SaveAsToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -315,8 +321,35 @@
             this.SaveAsToolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SaveAsToolStrip.Name = "SaveAsToolStrip";
             this.SaveAsToolStrip.Size = new System.Drawing.Size(28, 28);
-            this.SaveAsToolStrip.Text = "Сохранить как";
+            this.SaveAsToolStrip.Text = "Сохранить как...";
             this.SaveAsToolStrip.Click += new System.EventHandler(this.SaveAsToolStrip_Click);
+            // 
+            // savein
+            // 
+            this.savein.Name = "savein";
+            this.savein.Size = new System.Drawing.Size(252, 30);
+            this.savein.Text = "Сохранить в...";
+            this.savein.Click += new System.EventHandler(this.savein_Click);
+            // 
+            // SaveInToolStrip
+            // 
+            this.SaveInToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.SaveInToolStrip.Image = ((System.Drawing.Image)(resources.GetObject("SaveInToolStrip.Image")));
+            this.SaveInToolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SaveInToolStrip.Name = "SaveInToolStrip";
+            this.SaveInToolStrip.Size = new System.Drawing.Size(28, 28);
+            this.SaveInToolStrip.Text = "Сохранить в...";
+            this.SaveInToolStrip.Click += new System.EventHandler(this.SaveInToolStrip_Click);
+            // 
+            // CloseToolStrip
+            // 
+            this.CloseToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.CloseToolStrip.Image = ((System.Drawing.Image)(resources.GetObject("CloseToolStrip.Image")));
+            this.CloseToolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.CloseToolStrip.Name = "CloseToolStrip";
+            this.CloseToolStrip.Size = new System.Drawing.Size(28, 28);
+            this.CloseToolStrip.Text = "Закрыть";
+            this.CloseToolStrip.Click += new System.EventHandler(this.CloseToolStrip_Click);
             // 
             // Table
             // 
@@ -373,6 +406,9 @@
         private System.Windows.Forms.ToolStripButton OpenToolStrip;
         private System.Windows.Forms.ToolStripButton SaveToolStrip;
         private System.Windows.Forms.ToolStripButton SaveAsToolStrip;
+        private System.Windows.Forms.ToolStripMenuItem savein;
+        private System.Windows.Forms.ToolStripButton SaveInToolStrip;
+        private System.Windows.Forms.ToolStripButton CloseToolStrip;
     }
 }
 
