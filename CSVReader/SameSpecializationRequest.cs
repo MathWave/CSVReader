@@ -13,20 +13,20 @@ namespace CSVReader
     public partial class SameSpecializationRequest : Form
     {
 
-        Table form;
+        Table form; //ссылка на главную форму
 
-        public SameSpecializationRequest(Table f)
+        public SameSpecializationRequest(Table f) //конструтор
         {
             InitializeComponent();
             form = f;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //отменить
         {
             Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //применить
         {
             int num;
             try

@@ -14,7 +14,7 @@ namespace CSVReader
     public partial class Table : Form
     {
 
-        string FilePath;
+        string FilePath; //адрес файла
 
         static string[] colomns = 
         {
@@ -22,17 +22,17 @@ namespace CSVReader
             "ChiefGender", "ChiefPhone", "PublicPhone", "Fax", "Email", "CloseFlag", "CloseReason", "CloseDate", "ReopenDate",
             "WorkingHours", "ClarificationOfWorkingHours", "Specialization", "BeneficialDrugPrescriptions", "ExtraInfo",
             "POINT_X", "POINT_Y", "GLOBALID"
-        };
+        }; //заголовки
 
-        DataTable data = new DataTable();
-        public List<Dispanser> dispansers = new List<Dispanser>();
-        public List<Dispanser> ReserveCopy = new List<Dispanser>();
-        public bool reserved = false;
+        DataTable data = new DataTable(); //таблица
+        public List<Dispanser> dispansers = new List<Dispanser>(); //список диспансеров
+        public List<Dispanser> ReserveCopy = new List<Dispanser>(); //копия списка диспансеров, это для фильтров
+        public bool reserved = false; //есть ли резервная копия
 
         public Table()
         {
             InitializeComponent();
-        }
+        } //конструктор
 
         private void open_Click(object sender, EventArgs e)
         {
@@ -77,7 +77,7 @@ namespace CSVReader
             {
                 MessageBox.Show("Ошибка чтения файла!", "Ошибка!");
             }
-        }
+        } //открыть
 
         public void ShowOnGrid()
         {
@@ -122,7 +122,7 @@ namespace CSVReader
                 column.SortMode = DataGridViewColumnSortMode.NotSortable;
             }
             dataGridView1.Columns[0].Frozen = true;
-        }
+        } //отобразить список в форме
 
         private void saveas_Click(object sender, EventArgs e)
         {
@@ -152,7 +152,7 @@ namespace CSVReader
                 fstream.WriteLine();
             }
             fstream.Close();
-        }
+        } //сохранить как
 
         private void save_Click(object sender, EventArgs e)
         {
@@ -178,7 +178,7 @@ namespace CSVReader
                 fstream.WriteLine();
             }
             fstream.Close();
-        }
+        } //сохранить
 
         private void close_Click(object sender, EventArgs e)
         {
@@ -187,9 +187,9 @@ namespace CSVReader
             reserved = false;
             button1.Visible = false;
             FilePath = "";
-        }
+        } //закрыть
 
-        private void create_Click(object sender, EventArgs e)
+        private void create_Click(object sender, EventArgs e) //создать новый файл
         {
             data = new DataTable();
             dispansers = new List<Dispanser>();
@@ -203,7 +203,7 @@ namespace CSVReader
             dataGridView1.Width = Width - 40;
             dataGridView1.Height = Height - 100;
             button1.Location = new System.Drawing.Point(Width - 140, 0);
-        }
+        } //изменение размера формы
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -212,7 +212,7 @@ namespace CSVReader
             button1.Location = new System.Drawing.Point(Width - 140, 0);
             MaximumSize = Screen.PrimaryScreen.Bounds.Size;
             MinimumSize = Size;
-        }
+        } //что делать при загрузке
 
         private void add_Click(object sender, EventArgs e)
         {
@@ -223,7 +223,7 @@ namespace CSVReader
             }
             Add f = new Add(this);
             f.Show();
-        }
+        } //добавить диспансер
 
         private void change_Click(object sender, EventArgs e)
         {
@@ -234,7 +234,7 @@ namespace CSVReader
             }
             ChangeRequest f = new ChangeRequest(this);
             f.Show();
-        }
+        } //изменить диспансер
 
         private void remove_Click(object sender, EventArgs e)
         {
@@ -245,7 +245,7 @@ namespace CSVReader
             }
             Remove f = new Remove(this);
             f.Show();   
-        }
+        } //удалить диспансер
 
         private void NameGrow_Click(object sender, EventArgs e)
         {
@@ -258,7 +258,7 @@ namespace CSVReader
             Array.Sort(disp, (d1, d2) => string.Compare(d1.ChiefName, d2.ChiefName));
             dispansers = disp.ToList<Dispanser>();
             ShowOnGrid();
-        }
+        } //отсортировать по имени в порядке возрастания
 
         private void NameRise_Click(object sender, EventArgs e)
         {
@@ -271,7 +271,7 @@ namespace CSVReader
             Array.Sort(disp, (d1, d2) => string.Compare(d2.ChiefName, d1.ChiefName));
             dispansers = disp.ToList<Dispanser>();
             ShowOnGrid();
-        }
+        } //отсортировать по имени в порядке убывания
 
         private void GenderGrow_Click(object sender, EventArgs e)
         {
@@ -284,7 +284,7 @@ namespace CSVReader
             Array.Sort(disp, (d1, d2) => GenderCompare(d1, d2));
             dispansers = disp.ToList<Dispanser>();
             ShowOnGrid();
-        }
+        } //отсортировать по гендеру в порядке возрастания
 
         private void GenderRise_Click(object sender, EventArgs e)
         {
@@ -297,7 +297,7 @@ namespace CSVReader
             Array.Sort(disp, (d1, d2) => GenderCompare(d2, d1));
             dispansers = disp.ToList<Dispanser>();
             ShowOnGrid();
-        }
+        } //отсортировать по гендеру в порядке убывания
 
         int GenderCompare(Dispanser d1, Dispanser d2)
         {
@@ -307,7 +307,7 @@ namespace CSVReader
                 return 1;
             else
                 return -1;
-        }
+        } //сравнить диспансеры по гендеру
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -317,7 +317,7 @@ namespace CSVReader
             button1.Visible = false;
             ShowOnGrid();
             DispanserToolStrip.Enabled = true;
-        }
+        } //отменить фильтры
 
         private void FilterSame_Click(object sender, EventArgs e)
         {
@@ -331,7 +331,7 @@ namespace CSVReader
             SameSpecializationRequest f = new SameSpecializationRequest(this);
             f.Show();
             DispanserToolStrip.Enabled = false;
-        }
+        } //отфильтровать по одинаковым специализациям
 
         private void FilterSpecialization_Click(object sender, EventArgs e)
         {
@@ -345,7 +345,7 @@ namespace CSVReader
             FilterSpecialization f = new FilterSpecialization(this);
             f.Show();
             DispanserToolStrip.Enabled = false;
-        }
+        } //отфильтровать по специализации
 
         private void FilterChiefPosition_Click(object sender, EventArgs e)
         {
@@ -359,7 +359,7 @@ namespace CSVReader
             FilterChiefPosition f = new FilterChiefPosition(this);
             f.Show();
             DispanserToolStrip.Enabled = false;
-        }
+        } //отфильтровать по должности
 
         private void savein_Click(object sender, EventArgs e)
         {
@@ -384,7 +384,7 @@ namespace CSVReader
                 fstream.WriteLine();
             }
             fstream.Close();
-        }
+        } //сохранить в...
 
     }
 }

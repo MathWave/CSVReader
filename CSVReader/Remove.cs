@@ -13,9 +13,9 @@ namespace CSVReader
     public partial class Remove : Form
     {
 
-        Table form;
+        Table form; //ссылка на главную форму
 
-        public Remove(Table f)
+        public Remove(Table f) //конструктор
         {
             InitializeComponent();
             form = f;
@@ -23,12 +23,12 @@ namespace CSVReader
             MaximumSize = Size;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //отменить
         {
             Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //Применить
         {
             int num;
             try

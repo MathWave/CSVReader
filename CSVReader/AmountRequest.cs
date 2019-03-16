@@ -13,15 +13,15 @@ namespace CSVReader
     public partial class AmountRequest : Form
     {
 
-        Table form;
+        Table form; //ссылка на главную форму
 
-        public AmountRequest(Table f)
+        public AmountRequest(Table f) //конструктор
         {
             InitializeComponent();
             form = f;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //применить
         {
             int num;
             try

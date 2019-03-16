@@ -9,11 +9,12 @@ namespace CSVReader
     static class Formats
     {
 
-        public static string[] Parse(string line)
+        public static string[] Parse(string line) //распарсить
         {
             List<string> list = new List<string>();
             string tmp = "";
             int i = 0;
+            bool already = false;
             while (i < line.Length)
             {
                 if (i == line.Length - 1 || (line[i] == '"' && line[i + 1] == ';'))
@@ -22,11 +23,12 @@ namespace CSVReader
                     list.Add(tmp);
                     tmp = "";
                 }
-                else if (line[i] == ';' && line[i + 1] == '"')
+                else if (line[i] == ';' && line[i + 1] == '"' && !already)
                 {
                     i += 2;
                     list.Add(tmp);
                     tmp = "";
+                    already = true;
                 }
                 else if (line[i] == '"' && line[i + 1] == '"')
                 {

@@ -13,20 +13,20 @@ namespace CSVReader
     public partial class Add : Form
     {
 
-        Table f;
-        public Add(Table sender)
+        Table f; //ссылка на главную форму
+        public Add(Table sender) //конструктор
         {
             InitializeComponent();
             f = sender;
             MinimumSize = Size;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //закрыть
         {
             Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //применить
         {
             if (fullname.Text == null || fullname.Text.Length == 0)
             {
@@ -74,7 +74,7 @@ namespace CSVReader
             Close();
         }
 
-        bool Filled =>
+        bool Filled => //все поля заполнены?
                 fullname.Text.Length != 0 && textBox5.Text.Length != 0 &&
                 textBox7.Text.Length != 0 && comboBox1.Text.Length != 0 && comboBox2.Text.Length != 0 &&
                 textBox23.Text.Length != 0 && textBox24.Text.Length != 0 && textBox25.Text.Length != 0;

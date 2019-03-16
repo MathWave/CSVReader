@@ -8,8 +8,8 @@ namespace CSVReader
 {
     public class Location
     {
-        public string AdmArea;
-        public string District;
-        public Point Coordinates;
+        public string AdmArea; //административная область
+        public string District; //район
+        public Point Coordinates; //координаты
     }
 }

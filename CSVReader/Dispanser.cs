@@ -31,7 +31,7 @@ namespace CSVReader
         public int GLOBALID;
         public Location location;
 
-        public Dispanser(string[] elems)
+        public Dispanser(string[] elems) //конструктор
         {
             FullName = elems[1];
             ShortName = elems[2];
@@ -70,7 +70,7 @@ namespace CSVReader
             };
         }
 
-        public bool Same(Dispanser d) => d.Specialization == Specialization;
+        public bool Same(Dispanser d) => d.Specialization == Specialization; //одинаковые ли специализации
 
     }
 }

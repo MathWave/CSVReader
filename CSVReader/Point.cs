@@ -8,10 +8,10 @@ namespace CSVReader
 {
     public class Point
     {
-        public double X;
-        public double Y;
-
-        public Point(string x, string y)
+        public double X; //Х
+        public double Y; //У
+          
+        public Point(string x, string y) //конструктор
         {
             if (x.Length != 0)
                 X = double.Parse(x.Replace('.', ','));

@@ -13,20 +13,20 @@ namespace CSVReader
     public partial class FilterChiefPosition : Form
     {
 
-        Table form;
+        Table form; //ссылка на главную форму
 
-        public FilterChiefPosition(Table f)
+        public FilterChiefPosition(Table f) //конструктор
         {
             InitializeComponent();
             form = f;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //отмена
         {
             Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //применить
         {
             string pos = textBox1.Text;
             List<Dispanser> list = new List<Dispanser>();

@@ -13,20 +13,20 @@ namespace CSVReader
     public partial class FilterSpecialization : Form
     {
 
-        Table form;
+        Table form; //ссылка на главную форму
 
-        public FilterSpecialization(Table f)
+        public FilterSpecialization(Table f) //конструктор
         {
             InitializeComponent();
             form = f;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //отменить
         {
             Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //применить
         {
             string subs = textBox1.Text;
             List<Dispanser> list = new List<Dispanser>();
