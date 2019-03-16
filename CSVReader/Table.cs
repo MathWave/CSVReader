@@ -138,6 +138,7 @@ namespace CSVReader
             else
                 return;
             newpath += ".csv";
+            FilePath = newpath;
             StreamWriter fstream = new StreamWriter(newpath, false, System.Text.Encoding.UTF8);
             for (int i = 0; i < data.Columns.Count; i++)
                 fstream.Write(data.Columns[i].Caption + ";");
@@ -185,6 +186,7 @@ namespace CSVReader
             dispansers = new List<Dispanser>();
             reserved = false;
             button1.Visible = false;
+            FilePath = "";
         }
 
         private void create_Click(object sender, EventArgs e)

@@ -18,6 +18,7 @@ namespace CSVReader
         {
             InitializeComponent();
             f = sender;
+            MinimumSize = Size;
         }
 
         private void button1_Click(object sender, EventArgs e)

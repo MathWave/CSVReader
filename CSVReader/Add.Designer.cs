@@ -85,6 +85,7 @@
             // 
             // fullname
             // 
+            this.fullname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.fullname.Location = new System.Drawing.Point(244, 28);
             this.fullname.Name = "fullname";
             this.fullname.Size = new System.Drawing.Size(223, 26);
@@ -92,6 +93,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Location = new System.Drawing.Point(244, 60);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(223, 26);
@@ -99,6 +101,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Location = new System.Drawing.Point(244, 92);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(223, 26);
@@ -106,6 +109,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Location = new System.Drawing.Point(244, 124);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(223, 26);
@@ -113,6 +117,7 @@
             // 
             // textBox5
             // 
+            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox5.Location = new System.Drawing.Point(244, 156);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(223, 26);
@@ -120,6 +125,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox6.Location = new System.Drawing.Point(244, 188);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(223, 26);
@@ -127,6 +133,7 @@
             // 
             // textBox7
             // 
+            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox7.Location = new System.Drawing.Point(244, 220);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(223, 26);
@@ -134,6 +141,7 @@
             // 
             // textBox8
             // 
+            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox8.Location = new System.Drawing.Point(244, 252);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(223, 26);
@@ -141,6 +149,7 @@
             // 
             // textBox10
             // 
+            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox10.Location = new System.Drawing.Point(244, 316);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(223, 26);
@@ -148,6 +157,7 @@
             // 
             // textBox11
             // 
+            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox11.Location = new System.Drawing.Point(244, 348);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(223, 26);
@@ -155,6 +165,7 @@
             // 
             // textBox12
             // 
+            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox12.Location = new System.Drawing.Point(244, 380);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(223, 26);
@@ -162,6 +173,7 @@
             // 
             // textBox13
             // 
+            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox13.Location = new System.Drawing.Point(244, 412);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(223, 26);
@@ -169,6 +181,7 @@
             // 
             // textBox15
             // 
+            this.textBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox15.Location = new System.Drawing.Point(244, 476);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(223, 26);
@@ -176,6 +189,7 @@
             // 
             // textBox16
             // 
+            this.textBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox16.Location = new System.Drawing.Point(244, 508);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(223, 26);
@@ -183,6 +197,7 @@
             // 
             // textBox17
             // 
+            this.textBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox17.Location = new System.Drawing.Point(244, 540);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(223, 26);
@@ -190,6 +205,7 @@
             // 
             // textBox18
             // 
+            this.textBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox18.Location = new System.Drawing.Point(244, 572);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(223, 26);
@@ -197,6 +213,7 @@
             // 
             // textBox19
             // 
+            this.textBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox19.Location = new System.Drawing.Point(244, 604);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(223, 26);
@@ -204,6 +221,7 @@
             // 
             // textBox20
             // 
+            this.textBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox20.Location = new System.Drawing.Point(244, 636);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(223, 26);
@@ -211,6 +229,7 @@
             // 
             // textBox21
             // 
+            this.textBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox21.Location = new System.Drawing.Point(244, 668);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(223, 26);
@@ -218,6 +237,7 @@
             // 
             // textBox22
             // 
+            this.textBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox22.Location = new System.Drawing.Point(244, 700);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(223, 26);
@@ -225,6 +245,7 @@
             // 
             // textBox23
             // 
+            this.textBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox23.Location = new System.Drawing.Point(244, 732);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(223, 26);
@@ -232,6 +253,7 @@
             // 
             // textBox24
             // 
+            this.textBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox24.Location = new System.Drawing.Point(244, 764);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(223, 26);
@@ -239,6 +261,7 @@
             // 
             // textBox25
             // 
+            this.textBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox25.Location = new System.Drawing.Point(244, 796);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(223, 26);
@@ -479,6 +502,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -511,6 +535,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
@@ -531,7 +556,7 @@
             this.label26.TabIndex = 54;
             this.label26.Text = "Синим отмечены поля, обязательные для заполнения";
             // 
-            // Form2
+            // Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -589,7 +614,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.fullname);
-            this.Name = "Form2";
+            this.Name = "Add";
             this.Text = "Добавление диспансера";
             this.Deactivate += new System.EventHandler(this.Form2_Deactivate);
             this.ResumeLayout(false);

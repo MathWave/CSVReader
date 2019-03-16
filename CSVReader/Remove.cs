@@ -19,6 +19,8 @@ namespace CSVReader
         {
             InitializeComponent();
             form = f;
+            MinimumSize = Size;
+            MaximumSize = Size;
         }
 
         private void button1_Click(object sender, EventArgs e)

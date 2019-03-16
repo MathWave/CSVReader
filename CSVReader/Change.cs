@@ -47,6 +47,7 @@ namespace CSVReader
             textBox23.Text = d.location.Coordinates.X.ToString();
             textBox24.Text = d.location.Coordinates.Y.ToString();
             textBox25.Text = d.GLOBALID.ToString();
+            MinimumSize = Size;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -99,7 +100,8 @@ namespace CSVReader
                 MessageBox.Show("Обязательные поля для заполнения (выделены цветом):\nFullName\nPostalCode\nChiefName\nChiefGender\nCloseFlag\nPOINT_X\nPOINT_Y\nGLOBALID", "Ошибка!");
                 return;
             }
-            Dispanser d = new Dispanser(info);
+            Dispanser d;
+            try { d = new Dispanser(info); } catch { MessageBox.Show("Некорректно введены данные!", "Ошибка!"); return; }
             form.dispansers[num] = d;
             form.ShowOnGrid();
             Close();

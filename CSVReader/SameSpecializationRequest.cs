@@ -46,7 +46,7 @@ namespace CSVReader
             Close();
             List<Dispanser> list = new List<Dispanser>();
             foreach (Dispanser d in form.dispansers)
-                if (form.dispansers[num].Same(d))
+                if (form.dispansers[num - 1].Same(d))
                     list.Add(d);
             form.dispansers = list;
             form.ShowOnGrid();
