@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CSVReader.Add">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yAAAAAAASAAABCQAACAAABCIAAYAAAQEGAAAAACALA=</HashCode>
+      <FileName>Add.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="f" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CSVReader.AmountRequest">
+    <Position X="12.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAABAAAACAAAACAAAQAAAAECAAAAAAAAA=</HashCode>
+      <FileName>AmountRequest.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="form" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CSVReader.Change">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yAAACAAASAAABCQAACAAABCIAAYAAAAEGAAAAACALA=</HashCode>
+      <FileName>Change.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="form" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CSVReader.ChangeRequest">
+    <Position X="3.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAABAAAACAAAACAAAYAAAAEGAAAAAAAAA=</HashCode>
+      <FileName>ChangeRequest.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="form" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CSVReader.Dispanser">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAwCAAAIBAJQgEBCACEAAAAIAGAAAAAGAAIEE=</HashCode>
+      <FileName>Dispanser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="location" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CSVReader.FilterChiefPosition">
+    <Position X="6.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAABAAAACAAAACAAAYAAAAEGAAAAAAAAA=</HashCode>
+      <FileName>FilterChiefPosition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="form" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CSVReader.FilterSpecialization">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAABAAAACAAAACAAAYAAAAEGAAAAAAAAA=</HashCode>
+      <FileName>FilterSpecialization.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="form" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CSVReader.Formats">
+    <Position X="6.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Formats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSVReader.Location">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAgAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Location.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Coordinates" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CSVReader.Point">
+    <Position X="3.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Point.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSVReader.Remove">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAABAAAACAAAACAAAYAAAAEGAAAAAAAAA=</HashCode>
+      <FileName>Remove.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="form" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CSVReader.SameSpecializationRequest">
+    <Position X="12.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAABAAAACAAAACAAAYAAAAEGAAAAAAAAA=</HashCode>
+      <FileName>SameSpecializationRequest.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="form" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CSVReader.Table">
+    <Position X="9" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ATAAqVUAACCAEgAOIOCEAASWwDrIQAIEEcZxAAhKoAA=</HashCode>
+      <FileName>Table.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="dispansers" />
+      <Field Name="ReserveCopy" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
