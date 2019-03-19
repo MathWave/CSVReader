@@ -38,6 +38,7 @@ namespace CSVReader
             form.ShowOnGrid();
             form.button1.Visible = true;
             form.reserved = true;
+            form.DispanserToolStrip.Enabled = false;
         }
 
     }

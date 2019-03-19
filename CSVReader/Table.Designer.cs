@@ -385,7 +385,7 @@
         private System.Windows.Forms.ToolStripMenuItem saveas;
         private System.Windows.Forms.ToolStripMenuItem close;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ToolStripMenuItem DispanserToolStrip;
+        public System.Windows.Forms.ToolStripMenuItem DispanserToolStrip;
         private System.Windows.Forms.ToolStripMenuItem add;
         private System.Windows.Forms.ToolStripMenuItem remove;
         private System.Windows.Forms.ToolStripMenuItem change;

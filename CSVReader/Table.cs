@@ -330,7 +330,6 @@ namespace CSVReader
                 ReserveCopy = dispansers;
             SameSpecializationRequest f = new SameSpecializationRequest(this);
             f.ShowDialog();
-            DispanserToolStrip.Enabled = false;
         }
 
         private void FilterSpecialization_Click(object sender, EventArgs e) //отфильтровать по специализации
@@ -344,7 +343,6 @@ namespace CSVReader
                 ReserveCopy = dispansers;
             FilterSpecialization f = new FilterSpecialization(this);
             f.ShowDialog();
-            DispanserToolStrip.Enabled = false;
         }
 
         private void FilterChiefPosition_Click(object sender, EventArgs e) //отфильтровать по должности
@@ -358,7 +356,6 @@ namespace CSVReader
                 ReserveCopy = dispansers;
             FilterChiefPosition f = new FilterChiefPosition(this);
             f.ShowDialog();
-            DispanserToolStrip.Enabled = false;
         }
 
         private void savein_Click(object sender, EventArgs e) //сохранить в...
